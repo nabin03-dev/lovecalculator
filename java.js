@@ -9,7 +9,7 @@ function loveCalculator() {
     // Special case
     if ((yourName === "aayushaa" && loversName === "nabin") || (yourName === "nabin" && loversName === "aayushaa")) {
         // Set love score to 10000% for special case
-        var loveFinal = 10000;
+        var loveFinal = "unlimited";
     } else {
         // Calculate a random love score
         let loveScore = Math.random() * 100;
