@@ -26,9 +26,14 @@ function loveCalculator() {
         alert("Please enter your lover's name.");
     } else {
         // Display the love score
-        const loveFinalElement = document.getElementById("lovefinal");
-        loveFinalElement.innerHTML = `${yourName.charAt(0).toUpperCase() + yourName.slice(1)} and ${loversName.charAt(0).toUpperCase() + loversName.slice(1)}, your love score is ${loveFinal}%`;
+    const loveFinalElement = document.getElementById("lovefinal");
 
+   // Determine the message to display based on whether loveFinal is unlimited or a percentage
+     const loveScoreMessage = (loveFinal === "unlimited") 
+    ? `${yourName.charAt(0).toUpperCase() + yourName.slice(1)} and ${loversName.charAt(0).toUpperCase() + loversName.slice(1)}, your love score is unlimited`
+    : `${yourName.charAt(0).toUpperCase() + yourName.slice(1)} and ${loversName.charAt(0).toUpperCase() + loversName.slice(1)}, your love score is ${loveFinal}%`;
+
+        loveFinalElement.innerHTML = loveScoreMessage;
 
         // Add the blinking class
         loveFinalElement.classList.add("blinking");
