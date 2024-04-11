@@ -1,0 +1,156 @@
+body {
+  background-image: -webkit-linear-gradient(65deg, #c72c41 70%, #212121 30%);
+  background-color: #c7004c;
+  color: #ee4266;
+  font-family: 'Lobster', cursive;
+  margin: 0;
+  padding: 0;
+}
+
+.calculator {
+  padding: 50px;
+  text-align: center;
+  background-color: #211717;
+  width: 60%; /* Adjusted width for desktop */
+  margin: 100px auto 0; /* Center the calculator */
+}
+
+/* Style for the input fields */
+/* Style for the input fields (similar to the one you provided) */
+/* Style for the input fields */
+/* Styling the input fields */
+.name-box {
+  padding: 12px 14px; /* Padding */
+  width: 75%; /* Full width */
+  border: 2px solid #ee4266; /* Border color */
+  border-radius: 8px; /* Rounded corners */
+  transition: border-color 0.3s, box-shadow 0.3s; /* Transition effects */
+  margin-bottom: 20px; /* Space below input fields */
+}
+
+/* Placeholder animation class */
+.name-box.placeholder-animate::placeholder {
+  color: #ffaaaa; /* Change color to make it more noticeable */
+  font-style: italic; /* Italic style */
+  font-size: 1rem; /* Normal font size */
+  transition: color 0.3s ease-in-out, font-style 0.3s; /* Smooth transition */
+  opacity: 0.8; /* Make the placeholder slightly transparent */
+}
+
+/* Style for the placeholder text in input fields */
+.name-box::placeholder {
+  color: #ca59de; /* Color of placeholder text */
+  font-style: italic; /* Italicize placeholder text */
+  opacity: 0.8; /* Adjust opacity */
+  font-size: 1.1rem; /* Font size */
+  font-family: 'Lobster', cursive; /* Font style */
+}
+
+/* Add hover effect to input fields */
+.name-box:hover {
+  border-color: #bd245f; /* Change border color on hover */
+  box-shadow: 0 0 10px rgba(238, 66, 102, 0.5); /* Add glowing shadow effect */
+}
+
+/* Add focus effect to input fields */
+.name-box:focus {
+  border-color: #ee4266; /* Border color when focused */
+  box-shadow: 0 0 10px rgba(238, 66, 102, 0.7); /* Stronger shadow effect */
+  outline: none; /* Remove default outline */
+}
+
+/* Style for the buttons */
+.buttons {
+  padding: 12px 14px; /* Padding similar to input fields */
+  width: 50%; /* Same width as input fields */
+  border: 2px solid #ee4266; /* Border color */
+  border-radius: 8px; /* Rounded corners */
+  color: #ffd7e8; /* Text color */
+  background-color: #ffaaaa; /* Background color */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: border-color 0.3s, box-shadow 0.3s, background-color 0.3s; /* Transition effect */
+  font-size: 1.1rem; /* Font size */
+  box-sizing: border-box; /* Include padding and border in width calculation */
+  opacity: 0.5; /* Initial opacity */
+  font-family: 'Lobster', cursive; /* Font style */
+  margin-bottom: 20px; /* Add space below buttons */
+}
+
+/* Add hover effect to buttons */
+.buttons:hover {
+  border-color: #bd245f; /* Change border color on hover */
+  background-color: #f07185; /* Change background color on hover */
+  box-shadow: 0 0 10px rgba(238, 66, 102, 0.5); /* Add glowing shadow effect */
+  opacity: 1; /* Increase opacity on hover */
+}
+
+
+
+/* Social Media Icons */
+.social-media {
+  opacity: 0.5;
+  cursor: pointer;
+  padding: 10px 3px;
+}
+
+.social-media:hover {
+  opacity: 1;
+}
+
+a {
+  color: #ee4266;
+}
+
+/* Copyright */
+p {
+  opacity: 1;
+  font-size: 1rem;
+}
+
+#notice {
+  opacity: 0.5;
+  font-size: 0.8rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  /* Adjustments for tablets and larger mobile devices */
+  .calculator {
+      width: 90%; /* Adjusted width for larger mobile devices */
+      padding: 20px;
+      margin-top: 50px;
+  }
+
+  .name-box, .buttons {
+      width: 90%; /* Full width input boxes and buttons */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Adjustments for smaller mobile devices */
+  .calculator {
+      width: 100%; /* Full width for smaller screens */
+      padding: 15px;
+      margin-top: 30px;
+  }
+
+  .name-box, .buttons {
+      width: 100%; /* Full width input boxes and buttons */
+      padding: 10px;
+  }
+}
+/* CSS for blinking animation */
+@keyframes blink {
+  0%, 100% {
+      opacity: 1;
+  }
+  50% {
+      opacity: 0;
+  }
+}
+
+/* Apply the animation to the #lovefinal element */
+#lovefinal.blinking {
+  animation: blink 1s infinite;
+}
+
