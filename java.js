@@ -7,10 +7,10 @@ function loveCalculator() {
     const loversName = document.getElementById("lovername").value.toLowerCase();
 
     // Special case
-    if(yourName === "aayushaa" && loversName === "nabin") ||
+    if((yourName === "aayushaa" && loversName === "nabin") ||
       (yourName === "nabin" && loversName === "aayushaa") ||
       (yourName === "aayusha" && loversName === "nabin") ||
-      (yourName === "nabin" && loversName === "aayusha") {
+      (yourName === "nabin" && loversName === "aayusha")){
         // Set love score to 10000% for special case
         var loveFinal = "unlimited";
     } else {
